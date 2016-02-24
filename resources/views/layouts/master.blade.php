@@ -73,7 +73,7 @@
                                     <li class="divider"></li>
                                     <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
                                     </li>
-                                    <li><a href="{{ url('login') }}"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                    <li><a href="{{ url('logout') }}"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                     </li>
                                 </ul>
                                 <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
@@ -87,7 +87,7 @@
 					<li class="no-padding">
 						<ul class="collapsible collapsible-accordion">
 							<li class="bold">
-								<a class="collapsible-header waves-effect waves-yellow"><i class="mdi-action-face-unlock"></i> User Management</a>
+								<a class="collapsible-header waves-effect waves-yellow"><i class="mdi-action-assignment-ind"></i> User Management</a>
 								<div class="collapsible-body">
 									<ul>
 										<li>

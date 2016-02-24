@@ -11,16 +11,7 @@
 |
 */
 
-Route::get('/', function () { return view('pages.login'); });
-Route::get('login', function () { return view('pages.login'); });
-Route::get('home', function () { return view('pages.dashboard'); });
-Route::get('departments', function () { return view('pages.departments'); });
-Route::get('roles', function () { return view('pages.roles'); });
-Route::get('users', function () { return view('pages.users'); });
-Route::get('categories', function () { return view('pages.categories'); });
-Route::get('locations', function () { return view('pages.locations'); });
-Route::get('complaints', function () { return view('pages.complaints'); });
-Route::get('reports', function () { return view('pages.reports'); });
+Route::get('/', function () { return redirect('login'); });
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +24,15 @@ Route::get('reports', function () { return view('pages.reports'); });
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('home', 'HomeController@index');
+    Route::resource('departments', 'DepartmentController');
+    Route::resource('roles', 'RoleController');
+    Route::resource('users', 'UserController');
+    Route::resource('categories', 'CategoryController');
+    Route::resource('locations', 'LocationController');
+    Route::resource('complaints', 'ComplaintController');
+    Route::resource('reports', 'ReportController');
 });
