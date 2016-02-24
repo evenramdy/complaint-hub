@@ -52,7 +52,7 @@ php artisan key:generate
 - Migrate and seed your app with :
 ```
 php artisan migrate
-php artisan DB:seed
+php artisan db:seed
 ```
 - Serve your app with :
 ```
