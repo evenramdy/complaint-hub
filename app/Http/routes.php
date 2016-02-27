@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function () { return redirect('login'); });
+Route::get('/', function () { 
+	return redirect('login');
+	// return view('auth.login');
+});
 
 /*
 |--------------------------------------------------------------------------

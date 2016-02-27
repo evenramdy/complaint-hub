@@ -35,7 +35,7 @@
     <header id="header" class="page-topbar">
         <!-- start header nav-->
         <div class="navbar-fixed">
-            <nav class="blue">
+            <nav class="red">
                 <div class="nav-wrapper">
                     <h1 class="logo-wrapper">
                     	<a href="{{ url('/')}}" class="brand-logo darken-1">
@@ -147,7 +147,7 @@
     <!-- END MAIN -->
 
     <!-- START FOOTER -->
-	<footer class="page-footer blue">
+	<footer class="page-footer red">
 		<div class="footer-copyright">
 			<div class="container">
 				<span>Copyright © 2016 <a class="grey-text text-lighten-4" href="#!">Crideo</a> All rights reserved.</span>
