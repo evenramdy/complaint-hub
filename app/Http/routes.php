@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () { 
-	return redirect('login');
-	// return view('auth.login');
-});
+Route::get('/', function () { return redirect('home'); });
 
 /*
 |--------------------------------------------------------------------------
